@@ -1,0 +1,127 @@
+body {
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+}
+
+#root {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+#loginscreen {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 3;
+    background-color: rgba(20, 20, 20, 0.5);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    color: #F2F2F2;
+}
+
+#logger {
+    width: 400px;
+    height: 300px;
+    border: solid 4px #F2F2F2;
+    border-radius: 10%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+#name {
+    display: block;
+    width: 220px;
+    height: 60px;
+    border-radius: 15%;
+    text-align: center;
+    background: transparent;
+    border: solid 2px #F2F2F2;
+    top: 230px;
+    color: #F2F2F2;
+    font-size: 40px;
+    position: absolute;
+}
+
+#name:focus {
+    outline: none;
+    border-color: #F2F2F2;
+}
+
+.button {
+    font-size: 35px;
+    display: block;
+    width: 200px;
+    height: 60px;
+    border-radius: 20%;
+    position: absolute;
+    background-color: #F2F2F2;
+}
+
+#loguj {
+    top: 300px;
+}
+
+#reset {
+    top: 370px;
+}
+
+#logowanie {
+    font-size: 45px;
+    color: #F2F2F2;
+    margin-top: 5px;
+}
+
+#liner {
+    width: 100vw;
+    height: 120px;
+    position: absolute;
+    z-index: 3;
+    background-color: #0047AB;
+    color: #F2F2F2;
+    font-size: 25px;
+    padding: 20px;
+}
+
+#statusmsg {
+    float: left;
+}
+
+#showmoves {
+    width: 200px;
+    float: right;
+    text-align: center;
+    border: 5px solid #F2F2F2;
+    background-color: #0047AB;
+    border-radius: 15%;
+}
+
+#tabela {
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    width: 150px;
+    height: 400px;
+    background-color: #0047AB;
+    z-index: 3;
+    border: 5px solid #F2F2F2;
+    overflow: auto;
+    color: #F2F2F2;
+}
+
+#czekaj {
+    margin-top: 200px;
+    font-size: 50px;
+    color: #F2F2F2;
+}
