@@ -104,6 +104,7 @@ class Game {
         const raycaster = new THREE.Raycaster();
         const mouseVector = new THREE.Vector2()
         document.addEventListener("mousemove", (event) => {
+            console.log("mouse----move")
             mouseVector.x = (event.clientX / window.innerWidth) * 2 - 1;
             mouseVector.y = -(event.clientY / window.innerHeight) * 2 + 1;
             raycaster.setFromCamera(mouseVector, this.camera);
@@ -113,6 +114,7 @@ class Game {
             }
         })
         document.addEventListener("mousedown", (event) => {
+            console.log("mouse---down")
             mouseVector.x = (event.clientX / window.innerWidth) * 2 - 1;
             mouseVector.y = -(event.clientY / window.innerHeight) * 2 + 1;
             raycaster.setFromCamera(mouseVector, this.camera);
